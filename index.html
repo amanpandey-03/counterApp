@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="top">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,24 @@
    
 </head>
 <body>
-    <h1>People Entered :</h1>
-    <h2 id="count">0</h2> 
-    <script src="index.js"></script>
-    <button id="incrementBtn" onclick="increment()">INCREMENT</button>
-    <button id="saveBtn" onclick="save()">SAVE</button>
-    <button id="resetBtn" onclick="reset()">RESET</button>
-    <button id="entries" onclick="prev()">ENTRIES</button>
-    <p id="prev">gjhjk</p>
+    <div class="box">
+        <div class="top"> 
+            <h1>People Entered :</h1>
+            <h2 id="count">0</h2>
+        </div> 
+        <div class="bottom">
+            <br>
+            <script src="index.js"></script>
+            <div class="tabs">
+                <button class="incrementBtn" onclick="increment()">Increment</button>
+                <button class="saveBtn" onclick="save()">Save</button>
+            </div>
+            <div class="tabs">  
+                <button class="resetBtn" onclick="reset()">Reset</button>
+                <button class="entries" onclick="prev()">Entries</button>
+            </div>
+            <p id="prev"></p>
+        </div>
+    </div>
 </body>
 </html>
